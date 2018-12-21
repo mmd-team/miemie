@@ -9,6 +9,10 @@ var config = {
   authDomain: 'miemie.wilddog.com'
 }
 
+var sensors = require('./utils/sensorsdata.min.js');
+sensors.init();
+
+
 App({
   onLaunch: function () {
     //调用API从本地缓存中获取数据
